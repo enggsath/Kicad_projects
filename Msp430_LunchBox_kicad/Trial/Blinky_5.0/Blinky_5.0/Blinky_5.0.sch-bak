@@ -1,0 +1,221 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4180 1820 4220 1820
+$Comp
+L pspice:C C2
+U 1 1 5FA9B8AC
+P 4880 3690
+F 0 "C2" H 5058 3736 50  0000 L CNN
+F 1 "10u" H 5058 3645 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4880 3690 50  0001 C CNN
+F 3 "~" H 4880 3690 50  0001 C CNN
+F 4 "C" H 4880 3690 50  0001 C CNN "Spice_Primitive"
+F 5 "10u" H 4880 3690 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4880 3690 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4880 3690
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FA9BB4A
+P 4850 2470
+F 0 "R2" H 4918 2516 50  0000 L CNN
+F 1 "300k" H 4918 2425 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4890 2460 50  0001 C CNN
+F 3 "~" H 4850 2470 50  0001 C CNN
+F 4 "R" H 4850 2470 50  0001 C CNN "Spice_Primitive"
+F 5 "300k" H 4850 2470 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4850 2470 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4850 2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FA9BF7F
+P 4870 3180
+F 0 "R3" H 4938 3226 50  0000 L CNN
+F 1 "68k" H 4938 3135 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4910 3170 50  0001 C CNN
+F 3 "~" H 4870 3180 50  0001 C CNN
+F 4 "R" H 4870 3180 50  0001 C CNN "Spice_Primitive"
+F 5 "68k" H 4870 3180 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4870 3180 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4870 3180
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D2
+U 1 1 5FA9C68A
+P 5310 3400
+F 0 "D2" V 5349 3282 50  0000 R CNN
+F 1 "LED_ALT" V 5258 3282 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 5310 3400 50  0001 C CNN
+F 3 "~" H 5310 3400 50  0001 C CNN
+	1    5310 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5FA9D7B4
+P 5310 3030
+F 0 "R4" H 5378 3076 50  0000 L CNN
+F 1 "1k" H 5378 2985 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5350 3020 50  0001 C CNN
+F 3 "~" H 5310 3030 50  0001 C CNN
+F 4 "R" H 5310 3030 50  0001 C CNN "Spice_Primitive"
+F 5 "1k" H 5310 3030 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5310 3030 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5310 3030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4390 2320 4850 2320
+Wire Wire Line
+	4700 2840 5310 2840
+Wire Wire Line
+	5310 2840 5310 2880
+Wire Wire Line
+	4850 3030 4870 3030
+Wire Wire Line
+	4700 3040 4850 3040
+Wire Wire Line
+	4850 2620 4850 3030
+Connection ~ 4850 3030
+Wire Wire Line
+	4850 3030 4850 3040
+Wire Wire Line
+	4870 3330 4700 3330
+Wire Wire Line
+	4700 3240 4700 3330
+Connection ~ 4700 3330
+Wire Wire Line
+	4700 3330 4700 3360
+Wire Wire Line
+	4880 3440 4880 3330
+Wire Wire Line
+	4880 3330 4870 3330
+Connection ~ 4870 3330
+$Comp
+L power:GND3 #PWR04
+U 1 1 5FABB4EF
+P 5150 3970
+F 0 "#PWR04" H 5150 3720 50  0001 C CNN
+F 1 "GND3" H 5155 3797 50  0000 C CNN
+F 2 "" H 5150 3970 50  0001 C CNN
+F 3 "" H 5150 3970 50  0001 C CNN
+	1    5150 3970
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5310 3180 5310 3250
+Wire Wire Line
+	4880 3940 5150 3940
+Wire Wire Line
+	5150 3940 5150 3970
+Wire Wire Line
+	5310 3550 5310 3940
+Wire Wire Line
+	5310 3940 5150 3940
+Connection ~ 5150 3940
+Wire Wire Line
+	4200 3440 4200 3490
+Wire Wire Line
+	4390 2640 4390 2320
+Wire Wire Line
+	4200 2640 4390 2640
+Connection ~ 4200 2640
+$Comp
+L power:GND3 #PWR03
+U 1 1 5FAABC51
+P 4200 3540
+F 0 "#PWR03" H 4200 3290 50  0001 C CNN
+F 1 "GND3" H 4205 3367 50  0000 C CNN
+F 2 "" H 4200 3540 50  0001 C CNN
+F 3 "" H 4200 3540 50  0001 C CNN
+	1    4200 3540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3620 3360 4700 3360
+Wire Wire Line
+	3620 2840 3620 3360
+Wire Wire Line
+	3700 2840 3620 2840
+Wire Wire Line
+	3500 2640 4200 2640
+Wire Wire Line
+	3700 3240 3500 3240
+$Comp
+L Timer:NE555P U2
+U 1 1 5FA9AD92
+P 4200 3040
+F 0 "U2" H 4200 3621 50  0000 C CNN
+F 1 "NE555P" H 4200 3530 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4850 2640 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5050 2640 50  0001 C CNN
+	1    4200 3040
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 3490
+Wire Wire Line
+	4200 3490 4200 3540
+Wire Wire Line
+	4360 3950 4360 3940
+Wire Wire Line
+	4360 3490 4200 3490
+Wire Wire Line
+	4880 3940 4360 3940
+Connection ~ 4880 3940
+Connection ~ 4360 3940
+Wire Wire Line
+	4360 3940 4360 3490
+$Comp
+L power:+5V #PWR0101
+U 1 1 5FAA2148
+P 4200 2560
+F 0 "#PWR0101" H 4200 2410 50  0001 C CNN
+F 1 "+5V" H 4215 2733 50  0000 C CNN
+F 2 "" H 4200 2560 50  0001 C CNN
+F 3 "" H 4200 2560 50  0001 C CNN
+	1    4200 2560
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2560 4200 2640
+$Comp
+L USB_Con:USB_B J?
+U 1 1 5FAA7F1B
+P 2770 2850
+F 0 "J?" H 2827 3317 50  0000 C CNN
+F 1 "USB_B" H 2827 3226 50  0000 C CNN
+F 2 "" H 2920 2800 50  0001 C CNN
+F 3 "" H 2920 2800 50  0001 C CNN
+	1    2770 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3070 2650 3500 2650
+Wire Wire Line
+	3500 2640 3500 2650
+Connection ~ 3500 2650
+Wire Wire Line
+	3500 2650 3500 3240
+Wire Wire Line
+	2770 3250 2770 3490
+Wire Wire Line
+	2770 3490 4200 3490
+$EndSCHEMATC
